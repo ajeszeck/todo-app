@@ -78,7 +78,10 @@ function sortTaskDifficulty() {
         ul.appendChild(li);
     }
   }
-
   //add completed ul to the parent div.
   parent.appendChild(ul);
+}
+
+function sortTaskOwner() {
+  
 }
