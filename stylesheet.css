@@ -40,7 +40,7 @@ i {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
   /*border: 3px black dashed;*/
 }
 
@@ -98,7 +98,7 @@ fieldset {
 .main {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 10%;
   padding-right: 15%;
 }
@@ -121,6 +121,7 @@ fieldset {
   border: 0.5rem #a27744 solid;
   min-width: 300px;
   margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 h2 {
@@ -157,4 +158,10 @@ ul {
 .hard {
   /*background-color: red;*/
   color: #dd1313;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
