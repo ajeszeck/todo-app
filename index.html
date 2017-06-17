@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>TO-DO List</title>
+    <script src="https://use.fontawesome.com/e456ab459c.js"></script>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="stylesheet.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand" rel="stylesheet">
   </head>
   <body>
     <div class="header">
       <header>
-        <h1>To-Do List</h1>
+        <h1 class="title">To-Do List<i class="fa fa-pencil" aria-hidden="true"></i></h1>
       </header>
     </div>
     <div class="main">
@@ -23,10 +24,10 @@
           </fieldset>
           <fieldset>
             <legend>Who's task is this?</legend>
-            <label><input type="radio" name="who" value="Me" checked="checked">Me</label>
+            <label><input type="radio" name="who" value="Me" checked="checked">Mine</label>
             <label><input type="radio" name="who" value="Jeremy">Jeremy</label>
             <label><input type="radio" name="who" value="Cheri">Cheri</label>
-            <label><input type="radio" name="who" value="Other">Other</label>
+            <!-- <label><input type="radio" name="who" value="Other">Other</label> -->
           </fieldset>
           <fieldset>
             <legend>Difficulty of Task:</legend>
@@ -39,11 +40,22 @@
           <button type="submit" name="submit">Add task!</button>
         </form>
       </div>
-      <div>
-        <h1>Task List</h1>
-        <div id="todo-list"></div>
+      <div class="taskLists">
+        <div><h2>My Tasks</h2>
+          <div id="todo-list-me"></div>
+        </div>
+        <div><h2>Jeremy's Tasks</h2>
+          <div id="todo-list-jeremy"></div>
+        </div>
+        <div><h2>Cheri's Tasks</h2>
+          <div id="todo-list-cheri"></div>
+        </div>
       </div>
     </div>
+    <footer>
+    <form>
+      <button class="resetButton" type="submit" name="submit" onSubmit="resetPage()">Start Over?</button>
+    </form></footer>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
